@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ThemeProvider } from "@material-ui/core/styles";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import theme from "./ui/Theme";
+import Header from "../components/ui/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={() => <div>Home</div>} />
+          <Route exact path="/about" component={() => <div>About Me</div>} />
+          <Route exact path="/projects" component={() => <div>Projects</div>} />
+          <Route exact path="/resume" component={() => <div>My Resume</div>} />
+          <Route
+            exact
+            path="/contact"
+            component={() => <div>Contact Me</div>}
+          />
+        </Switch>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
