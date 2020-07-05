@@ -16,10 +16,10 @@ export default createMuiTheme({
       green: `${lightGreen}`,
     },
     primary: {
-      main: `${lightGreen}`,
+      main: `${pinkRed}`,
     },
     secondary: {
-      main: `${lightBrown}`,
+      main: `${lightGreen}`,
     },
   },
   typography: {
@@ -28,12 +28,12 @@ export default createMuiTheme({
       textTransform: "none",
       fontWeight: 700,
       fontSize: "1rem",
-      color: `${darkBrown}`,
+      color: `${lightGreen}`,
     },
     h1: {
       fontFamily: "Montserrat",
       fontSize: "1.5rem",
-      color: `${darkBrown}`,
+      color: `${lightGreen}`,
       marginLeft: '1rem'
     },
   },

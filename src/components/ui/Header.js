@@ -10,6 +10,8 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 
+import logo from '../../img/logocircle.png';
+
 function ElevationScroll(props) {
   const { children } = props;
 
@@ -26,7 +28,16 @@ function ElevationScroll(props) {
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
-    marginBottom: "1em",
+    marginBottom: "3.5em",
+  },
+  logo: {
+      height: '7em',
+  },
+  logoContainer: {
+      padding: 0,
+      "&:hover": {
+          backgroundColor: "transparent",
+    }
   },
   tabContainer: {
     marginLeft: "auto",
@@ -65,9 +76,8 @@ export default function Header(props) {
       <ElevationScroll>
         <AppBar position="fixed">
           <Toolbar disableGutters>
-            <Typography variant="h1" style={{fontFamily: "Sriracha"}}>
-              Charlene Johnson, Full Stack Web Developer
-            </Typography>
+            <img src ={logo} alt="portfolio logo" className={classes.logo} />
+            <Typography variant="h1" style={{fontFamily:"Sriracha"}}>Full Stack Web Developer</Typography>
             <Tabs
               value={value}
               onChange={handleChange}
