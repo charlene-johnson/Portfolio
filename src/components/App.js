@@ -14,6 +14,9 @@ function App() {
           <Route exact path="/" component={() => <div>Home</div>} />
           <Route exact path="/about" component={() => <div>About Me</div>} />
           <Route exact path="/projects" component={() => <div>Projects</div>} />
+          <Route exact path="/project1" component={() => <div>Project 1</div>} />
+          <Route exact path="/project2" component={() => <div>Project 2</div>} />
+          <Route exact path="/arcdevelopment" component={() => <div>Arc Development</div>} />
           <Route exact path="/resume" component={() => <div>My Resume</div>} />
           <Route
             exact
