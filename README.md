@@ -1,6 +1,6 @@
 ## My Portfolio
 
-This project is my portfolio page!
+This project is my Portfolio page!
 
 **Libraries that were used**
 
