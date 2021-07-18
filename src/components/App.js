@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import theme from "./ui/Theme";
 import Header from "../components/ui/Header";
+import Footer from "../components/ui/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             component={() => <div>Contact Me</div>}
           />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );

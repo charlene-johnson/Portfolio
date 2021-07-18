@@ -14,9 +14,10 @@ import {
   ListItem,
   ListItemText,
   SwipeableDrawer,
+  makeStyles,
+  useTheme
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 
 import logo from "../../img/logomaybe.png";
