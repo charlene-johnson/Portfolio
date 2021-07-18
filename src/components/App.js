@@ -27,7 +27,7 @@ function App() {
             component={() => <div>Contact Me</div>}
           />
         </Switch>
-        <Footer value={value} setvalue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
+        <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
       </BrowserRouter>
     </ThemeProvider>
   );
